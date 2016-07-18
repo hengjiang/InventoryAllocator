@@ -16,8 +16,9 @@ public class Application {
     public static void main(String[] args) {
         // initialize inventory
         Inventory inventory=new Inventory();
+        // batch add products into inventory
         Map<String, Integer> products = new HashMap<String, Integer>() {
-            
+
             {
                 put("A", 2);
                 put("B", 3);
@@ -27,6 +28,7 @@ public class Application {
             }
         };
         inventory.addProduct(products);
+        // add single product each time
         // inventory.addProduct("A", 2);
         // inventory.addProduct("B", 3);
         // inventory.addProduct("C", 1);
